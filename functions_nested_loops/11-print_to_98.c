@@ -11,7 +11,7 @@ void print_to_98(int n)
 	/* Logic for counting UP to 98 */
 	if (n <= 98)
 	{
-		for (n; n < 98; n++)
+		for (; n < 98; n++)
 		{
 			printf("%d, ", n);
 		}
@@ -19,7 +19,7 @@ void print_to_98(int n)
 	/* Logic for counting DOWN to 98 */
 	else
 	{
-		for (n; n > 98; n--)
+		for (; n > 98; n--)
 		{
 			printf("%d, ", n);
 		}
