@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_name - prints a name using a function pointer
+ * print_name - prints a name
  * @name: name of the person
  * @f: pointer to the printing function
  *
@@ -10,5 +10,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-        f(name);
+	if (name == NULL || f == NULL)
+		return;
+
+	f(name);
 }
